@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-primary">Aszódi Bau</div>
+            <img src={logo} alt="Aszódi Bau" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
@@ -33,7 +34,7 @@ const Navigation = () => {
                 {link.name}
               </Link>
             ))}
-            <Button asChild className="bg-primary hover:bg-accent">
+            <Button asChild className="bg-accent hover:bg-accent/90 text-white font-semibold">
               <Link to="/kapcsolat">Ajánlatkérés</Link>
             </Button>
           </div>
@@ -66,7 +67,7 @@ const Navigation = () => {
                   {link.name}
                 </Link>
               ))}
-              <Button asChild className="bg-primary hover:bg-accent w-full">
+              <Button asChild className="bg-accent hover:bg-accent/90 text-white font-semibold w-full">
                 <Link to="/kapcsolat" onClick={() => setIsMenuOpen(false)}>
                   Ajánlatkérés
                 </Link>
