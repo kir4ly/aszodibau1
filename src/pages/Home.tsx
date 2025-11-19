@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Home as HomeIcon, Building2, Hammer, ArrowRight } from "lucide-react";
 import ServiceCard from "@/components/ServiceCard";
 import heroImage from "@/assets/hero-construction.jpg";
+import logo from "@/assets/logo.png";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
@@ -54,17 +55,19 @@ const Home = () => {
           <div className="absolute inset-0 hero-gradient"></div>
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center text-white animate-fade-in">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Minőségi lakásfelújítás Kecskeméten
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            Az Aszódi Bau teljes körű építőipari kivitelezést vállal a tervezéstől a befejezésig –
+          <img 
+            src={logo} 
+            alt="Aszódi Bau - Haza hoztuk a minőséget" 
+            className="w-full max-w-md mx-auto mb-8 drop-shadow-2xl"
+          />
+          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-medium">
+            Teljes körű építőipari kivitelezés a tervezéstől a befejezésig –
             lakásfelújítás, homlokzatszigetelés és kőműves munkák egy kézben.
           </p>
           <Button
             asChild
             size="lg"
-            className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6"
+            className="bg-accent text-white hover:bg-accent/90 text-lg px-8 py-6 font-semibold"
           >
             <Link to="/kapcsolat">Kapcsolatfelvétel</Link>
           </Button>
