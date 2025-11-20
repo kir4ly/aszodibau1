@@ -6,11 +6,11 @@ import ServiceCard from "@/components/ServiceCard";
 import heroImage from "@/assets/hero-building.png";
 import logo from "@/assets/logo.png";
 import gallery1 from "@/assets/gallery-1-new.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
+import gallery7 from "@/assets/gallery-7.jpg";
+import gallery8 from "@/assets/gallery-8.jpg";
+import gallery9 from "@/assets/gallery-9.jpg";
+import gallery10 from "@/assets/gallery-10.jpg";
+import gallery11 from "@/assets/gallery-11.jpg";
 const Home = () => {
   const services = [{
     icon: HomeIcon,
@@ -26,23 +26,20 @@ const Home = () => {
     description: "Alapozás, falazás, válaszfalak, átalakítások – precíz, szakszerű kőműves munkák lakásoknál és kisebb épületeknél. Stabil szerkezet, tiszta, rendezett munkaterület."
   }];
   const galleryImages = [{
-    src: gallery1,
-    alt: "Teljes körű lakásfelújítás Kecskeméten - nappali és konyha"
+    src: gallery7,
+    alt: "Teljes lakásfelújítás tiszta kivitelezéssel"
   }, {
-    src: gallery2,
-    alt: "Homlokzatszigetelés referencia munka"
+    src: gallery8,
+    alt: "Modern fürdőszoba komplett átalakítás"
   }, {
-    src: gallery3,
-    alt: "Professzionális kőműves munkák"
+    src: gallery9,
+    alt: "Irodahelyiség kialakítás és felújítás"
   }, {
-    src: gallery4,
-    alt: "Modern fürdőszoba felújítás"
+    src: gallery10,
+    alt: "Mennyezeti LED világítás beépítése"
   }, {
-    src: gallery5,
-    alt: "Kortárs konyha átalakítás"
-  }, {
-    src: gallery6,
-    alt: "Belső válaszfal építés"
+    src: gallery11,
+    alt: "Indirekt LED világítás kivitelezés"
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
