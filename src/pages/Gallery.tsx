@@ -48,7 +48,7 @@ const Gallery = () => {
       <section className="py-20 bg-primary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Képgaléria – Referenciáink</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Referenciáink</h1>
             <p className="text-xl md:text-2xl opacity-90">
               Válogatás az elkészült munkáinkból. Lakásfelújítások, homlokzatszigetelés és kőműves
               munkák Kecskeméten és környékén. A képek valós projekteket mutatnak be, ahol az
