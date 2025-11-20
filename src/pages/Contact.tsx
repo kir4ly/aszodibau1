@@ -142,7 +142,7 @@ const Contact = () => {
               animationDelay: "0.1s"
             }}>
                 <CardContent className="p-0">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.8!2d19.6917!3d46.9067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743da6c6e124e43%3A0x400c4290c1e1260!2sKecskem%C3%A9t%2C%20Kossuth%20Lajos%20u.%2060%2C%206000!5e0!3m2!1sen!2shu!4v1234567890" width="100%" height="300" style={{
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.773!2d19.6891!3d46.9067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743da59a0bb7bdf%3A0x8f5e0b0e2f2c3f1e!2sAsz%C3%B3di%20Bau!5e0!3m2!1sen!2shu!4v1647000000000!5m2!1sen!2shu" width="100%" height="300" style={{
                   border: 0
                 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="rounded-lg" title="Aszódi Bau helyszíne térképen"></iframe>
                 </CardContent>
