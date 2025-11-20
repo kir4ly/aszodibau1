@@ -7,7 +7,6 @@ import gallery10 from "@/assets/gallery-10.jpg";
 import gallery11 from "@/assets/gallery-11.jpg";
 
 const Gallery = () => {
-  const [selectedFilter, setSelectedFilter] = useState("all");
 
   const galleryItems = [
     {
@@ -42,17 +41,6 @@ const Gallery = () => {
     },
   ];
 
-  const filters = [
-    { id: "all", label: "Összes projekt" },
-    { id: "renovation", label: "Lakásfelújítás" },
-    { id: "insulation", label: "Homlokzatszigetelés" },
-    { id: "masonry", label: "Kőműves munkák" },
-  ];
-
-  const filteredItems =
-    selectedFilter === "all"
-      ? galleryItems
-      : galleryItems.filter((item) => item.category === selectedFilter);
 
   return (
     <div className="min-h-screen">
@@ -73,27 +61,14 @@ const Gallery = () => {
       {/* Gallery Section */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
-          {/* Filters */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12 animate-fade-in">
-            {filters.map((filter) => (
-              <Button
-                key={filter.id}
-                variant={selectedFilter === filter.id ? "default" : "outline"}
-                onClick={() => setSelectedFilter(filter.id)}
-                className={
-                  selectedFilter === filter.id
-                    ? "bg-primary hover:bg-accent"
-                    : "hover:bg-secondary"
-                }
-              >
-                {filter.label}
-              </Button>
-            ))}
+          {/* Title */}
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">Projektjeink</h2>
           </div>
 
           {/* Gallery Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredItems.map((item, index) => (
+            {galleryItems.map((item, index) => (
               <div
                 key={index}
                 className="group relative overflow-hidden rounded-lg shadow-lg animate-scale-in"
