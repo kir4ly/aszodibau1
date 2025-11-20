@@ -76,7 +76,7 @@ const Home = () => {
               amire egy otthon felújításánál szükség lehet.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
             {services.map((service, index) => <div key={index} className="animate-scale-in" style={{
             animationDelay: `${index * 0.1}s`
           }}>
