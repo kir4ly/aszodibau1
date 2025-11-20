@@ -149,7 +149,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <p className="text-sm uppercase tracking-wider mb-4">Lépj kapcsolatba velünk!</p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Készen állsz a felújításra?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Építsük együtt álmaid otthonát!</h2>
               <p className="text-lg mb-8 opacity-90">
                 Kérj ajánlatot, egyeztessünk a terveidről, és megmutatjuk, hogyan lesz belőlük
                 megvalósult otthon.
@@ -182,19 +182,13 @@ const Home = () => {
               </div>
               
               {/* Map */}
-              <Card className="animate-scale-in" style={{ animationDelay: "0.1s" }}>
+              <Card className="animate-scale-in" style={{
+              animationDelay: "0.1s"
+            }}>
                 <CardContent className="p-0">
-                  <iframe 
-                    src="https://www.google.com/maps?q=Kecskemét,+Kossuth+Lajos+u.+60&output=embed" 
-                    width="100%" 
-                    height="300" 
-                    style={{ border: 0 }}
-                    allowFullScreen 
-                    loading="lazy" 
-                    referrerPolicy="no-referrer-when-downgrade" 
-                    className="rounded-lg"
-                    title="Aszódi Bau helyszíne - Kecskemét, Kossuth Lajos u. 60"
-                  ></iframe>
+                  <iframe src="https://www.google.com/maps?q=Kecskemét,+Kossuth+Lajos+u.+60&output=embed" width="100%" height="300" style={{
+                  border: 0
+                }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="rounded-lg" title="Aszódi Bau helyszíne - Kecskemét, Kossuth Lajos u. 60"></iframe>
                 </CardContent>
               </Card>
             </div>
