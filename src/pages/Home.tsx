@@ -151,8 +151,7 @@ const Home = () => {
               <p className="text-sm uppercase tracking-wider mb-4">LÉPJ VELÜNK KAPCSOLATBA!</p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Építsük együtt álmaid otthonát!</h2>
               <p className="text-lg mb-8 opacity-90">
-                Kérj ajánlatot, egyeztessünk a terveidről, és megmutatjuk, hogyan lesz belőlük
-                megvalósult otthon.
+                Kérj ajánlatot, egyeztessünk a terveidről, és megmutatjuk, hogyan lesz belőlük valóság.
               </p>
               <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90">
                 <Link to="/kapcsolat">Kapcsolatfelvétel</Link>
