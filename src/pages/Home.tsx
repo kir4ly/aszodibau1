@@ -10,67 +10,54 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
-
 const Home = () => {
-  const services = [
-    {
-      icon: HomeIcon,
-      title: "Lakásfelújítás",
-      description:
-        "Teljes körű lakásfelújítást vállalunk a bontástól a kulcsrakész átadásig. Konyha, fürdőszoba, nappali vagy teljes lakás modernizálása – megtervezzük, elvégezzük, átadjuk.",
-    },
-    {
-      icon: Building2,
-      title: "Homlokzatszigetelés",
-      description:
-        "Energiahatékony, korszerű homlokzatszigetelő rendszerek kivitelezése. Segítünk csökkenteni a fűtési költségeket és tartósan megóvni az épületet az időjárástól.",
-    },
-    {
-      icon: Hammer,
-      title: "Kőműves munkák",
-      description:
-        "Alapozás, falazás, válaszfalak, átalakítások – precíz, szakszerű kőműves munkák lakásoknál és kisebb épületeknél. Stabil szerkezet, tiszta, rendezett munkaterület.",
-    },
-  ];
-
-  const galleryImages = [
-    { src: gallery1, alt: "Teljes körű lakásfelújítás Kecskeméten - nappali és konyha" },
-    { src: gallery2, alt: "Homlokzatszigetelés referencia munka" },
-    { src: gallery3, alt: "Professzionális kőműves munkák" },
-    { src: gallery4, alt: "Modern fürdőszoba felújítás" },
-    { src: gallery5, alt: "Kortárs konyha átalakítás" },
-    { src: gallery6, alt: "Belső válaszfal építés" },
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const services = [{
+    icon: HomeIcon,
+    title: "Lakásfelújítás",
+    description: "Teljes körű lakásfelújítást vállalunk a bontástól a kulcsrakész átadásig. Konyha, fürdőszoba, nappali vagy teljes lakás modernizálása – megtervezzük, elvégezzük, átadjuk."
+  }, {
+    icon: Building2,
+    title: "Homlokzatszigetelés",
+    description: "Energiahatékony, korszerű homlokzatszigetelő rendszerek kivitelezése. Segítünk csökkenteni a fűtési költségeket és tartósan megóvni az épületet az időjárástól."
+  }, {
+    icon: Hammer,
+    title: "Kőműves munkák",
+    description: "Alapozás, falazás, válaszfalak, átalakítások – precíz, szakszerű kőműves munkák lakásoknál és kisebb épületeknél. Stabil szerkezet, tiszta, rendezett munkaterület."
+  }];
+  const galleryImages = [{
+    src: gallery1,
+    alt: "Teljes körű lakásfelújítás Kecskeméten - nappali és konyha"
+  }, {
+    src: gallery2,
+    alt: "Homlokzatszigetelés referencia munka"
+  }, {
+    src: gallery3,
+    alt: "Professzionális kőműves munkák"
+  }, {
+    src: gallery4,
+    alt: "Modern fürdőszoba felújítás"
+  }, {
+    src: gallery5,
+    alt: "Kortárs konyha átalakítás"
+  }, {
+    src: gallery6,
+    alt: "Belső válaszfal építés"
+  }];
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[600px] flex items-center justify-center">
         <div className="absolute inset-0">
-          <img
-            src={heroImage}
-            alt="Aszódi Bau építőipari munkák Kecskeméten"
-            className="w-full h-full object-cover"
-          />
+          <img src={heroImage} alt="Aszódi Bau építőipari munkák Kecskeméten" className="w-full h-full object-cover" />
           <div className="absolute inset-0 hero-gradient"></div>
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center text-white animate-fade-in">
           <div className="inline-block bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl mb-8">
-            <img 
-              src={logo} 
-              alt="Aszódi Bau - Haza hoztuk a minőséget" 
-              className="w-full max-w-sm mx-auto"
-            />
+            <img src={logo} alt="Aszódi Bau - Haza hoztuk a minőséget" className="w-full max-w-sm mx-auto" />
           </div>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-medium">
-            Teljes körű építőipari kivitelezés a tervezéstől a befejezésig –
-            lakásfelújítás, homlokzatszigetelés és kőműves munkák egy kézben.
+            Teljes körű építőipari kivitelezés a tervezéstől a befejezésig – lakás
           </p>
-          <Button
-            asChild
-            size="lg"
-            className="bg-accent text-white hover:bg-accent/90 text-lg px-8 py-6 font-semibold"
-          >
+          <Button asChild size="lg" className="bg-accent text-white hover:bg-accent/90 text-lg px-8 py-6 font-semibold">
             <Link to="/kapcsolat">Kapcsolatfelvétel</Link>
           </Button>
         </div>
@@ -87,11 +74,11 @@ const Home = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div key={index} className="animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+            {services.map((service, index) => <div key={index} className="animate-scale-in" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
                 <ServiceCard {...service} />
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -118,11 +105,7 @@ const Home = () => {
               </Button>
             </div>
             <div className="animate-scale-in">
-              <img
-                src={gallery1}
-                alt="Aszódi Bau építőipari referencia munka"
-                className="rounded-lg shadow-xl w-full h-auto"
-              />
+              <img src={gallery1} alt="Aszódi Bau építőipari referencia munka" className="rounded-lg shadow-xl w-full h-auto" />
             </div>
           </div>
         </div>
@@ -139,20 +122,12 @@ const Home = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {galleryImages.map((image, index) => (
-              <div
-                key={index}
-                className="group relative overflow-hidden rounded-lg shadow-lg animate-scale-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                />
+            {galleryImages.map((image, index) => <div key={index} className="group relative overflow-hidden rounded-lg shadow-lg animate-scale-in" style={{
+            animationDelay: `${index * 0.1}s`
+          }}>
+                <img src={image.src} alt={image.alt} className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300"></div>
-              </div>
-            ))}
+              </div>)}
           </div>
           <div className="text-center">
             <Button asChild size="lg" className="bg-primary hover:bg-accent">
@@ -175,11 +150,7 @@ const Home = () => {
                 Kérj ajánlatot, egyeztessünk a terveidről, és megmutatjuk, hogyan lesz belőlük
                 megvalósult otthon.
               </p>
-              <Button
-                asChild
-                size="lg"
-                className="bg-white text-primary hover:bg-white/90"
-              >
+              <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90">
                 <Link to="/kapcsolat">Kapcsolatfelvétel</Link>
               </Button>
             </div>
@@ -198,10 +169,7 @@ const Home = () => {
                 </p>
                 <p className="flex items-start">
                   <span className="font-semibold mr-2">Email:</span>
-                  <a
-                    href="mailto:aszodibau@gmail.com"
-                    className="hover:text-primary transition-colors"
-                  >
+                  <a href="mailto:aszodibau@gmail.com" className="hover:text-primary transition-colors">
                     aszodibau@gmail.com
                   </a>
                 </p>
@@ -210,8 +178,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Home;
