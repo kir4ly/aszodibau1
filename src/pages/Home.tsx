@@ -148,7 +148,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <p className="text-sm uppercase tracking-wider mb-4">Lépj kapcsolatba velünk!</p>
+              <p className="text-sm uppercase tracking-wider mb-4">LÉPJ VELÜNK KAPCSOLATBA!</p>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Építsük együtt álmaid otthonát!</h2>
               <p className="text-lg mb-8 opacity-90">
                 Kérj ajánlatot, egyeztessünk a terveidről, és megmutatjuk, hogyan lesz belőlük
