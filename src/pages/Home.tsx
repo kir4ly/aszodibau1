@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { Home as HomeIcon, Building2, Hammer, ArrowRight } from "lucide-react";
 import ServiceCard from "@/components/ServiceCard";
 import heroImage from "@/assets/hero-building.png";
@@ -157,26 +158,45 @@ const Home = () => {
                 <Link to="/kapcsolat">Kapcsolatfelvétel</Link>
               </Button>
             </div>
-            <div className="bg-white text-foreground p-8 rounded-lg shadow-xl animate-scale-in">
-              <h3 className="text-2xl font-bold mb-6 text-primary">Aszódi Bau</h3>
-              <div className="space-y-4">
-                <p className="flex items-start">
-                  <span className="font-semibold mr-2">Cím:</span>
-                  <span>6000 Kecskemét, Kossuth Lajos u. 60.</span>
-                </p>
-                <p className="flex items-start">
-                  <span className="font-semibold mr-2">Telefon:</span>
-                  <a href="tel:+36304372393" className="hover:text-primary transition-colors">
-                    +36 30 437 23 93
-                  </a>
-                </p>
-                <p className="flex items-start">
-                  <span className="font-semibold mr-2">Email:</span>
-                  <a href="mailto:aszodibau@gmail.com" className="hover:text-primary transition-colors">
-                    aszodibau@gmail.com
-                  </a>
-                </p>
+            <div className="space-y-6">
+              <div className="bg-white text-foreground p-8 rounded-lg shadow-xl animate-scale-in">
+                <h3 className="text-2xl font-bold mb-6 text-primary">Aszódi Bau</h3>
+                <div className="space-y-4">
+                  <p className="flex items-start">
+                    <span className="font-semibold mr-2">Cím:</span>
+                    <span>6000 Kecskemét, Kossuth Lajos u. 60.</span>
+                  </p>
+                  <p className="flex items-start">
+                    <span className="font-semibold mr-2">Telefon:</span>
+                    <a href="tel:+36304372393" className="hover:text-primary transition-colors">
+                      +36 30 437 23 93
+                    </a>
+                  </p>
+                  <p className="flex items-start">
+                    <span className="font-semibold mr-2">Email:</span>
+                    <a href="mailto:aszodibau@gmail.com" className="hover:text-primary transition-colors">
+                      aszodibau@gmail.com
+                    </a>
+                  </p>
+                </div>
               </div>
+              
+              {/* Map */}
+              <Card className="animate-scale-in" style={{ animationDelay: "0.1s" }}>
+                <CardContent className="p-0">
+                  <iframe 
+                    src="https://www.google.com/maps?q=Kecskemét,+Kossuth+Lajos+u.+60&output=embed" 
+                    width="100%" 
+                    height="300" 
+                    style={{ border: 0 }}
+                    allowFullScreen 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade" 
+                    className="rounded-lg"
+                    title="Aszódi Bau helyszíne - Kecskemét, Kossuth Lajos u. 60"
+                  ></iframe>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
