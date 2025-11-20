@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Home as HomeIcon, Building2, Hammer, ArrowRight } from "lucide-react";
 import ServiceCard from "@/components/ServiceCard";
-import heroImage from "@/assets/hero-construction.jpg";
+import heroImage from "@/assets/hero-building.png";
 import logo from "@/assets/logo.png";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
@@ -47,7 +47,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative h-[600px] flex items-center justify-center">
         <div className="absolute inset-0">
-          <img src={heroImage} alt="Aszódi Bau építőipari munkák Kecskeméten" className="w-full h-full object-cover" />
+          <img src={heroImage} alt="Aszódi Bau - Modern építőipari megoldások" className="w-full h-full object-cover" />
           <div className="absolute inset-0 hero-gradient"></div>
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center text-white animate-fade-in">
