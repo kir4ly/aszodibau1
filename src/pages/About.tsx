@@ -38,11 +38,12 @@ const About = () => {
               />
             </div>
             <div className="animate-scale-in space-y-6">
+              <h2 className="text-3xl font-bold text-primary">
+                Teljes körű felújítás – a konyhától a fürdőig
+              </h2>
               <p className="text-lg leading-relaxed">
-                Az Aszódi Bau teljes körű lakásfelújítással és építőipari munkákkal foglalkozik, a
-                tervezéstől a kivitelezésig. Segítünk megtervezni az átalakítást, kiválasztani a
-                megfelelő anyagokat, és elvégezzük a szükséges munkálatokat – egy kézben tartva a
-                teljes folyamatot.
+                Cégünk teljes körű lakásfelújítással és építőipari munkákkal foglalkozik, a
+                tervezéstől a kivitelezésig.
               </p>
               <p className="text-lg leading-relaxed">
                 Célunk, hogy ügyfeleink álmait valóra váltsuk minőségi munkával, megbízhatósággal és
