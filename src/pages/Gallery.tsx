@@ -6,11 +6,6 @@ import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
 import gallery6 from "@/assets/gallery-6.jpg";
-import gallery7 from "@/assets/gallery-7.jpg";
-import gallery8 from "@/assets/gallery-8.jpg";
-import gallery9 from "@/assets/gallery-9.jpg";
-import gallery10 from "@/assets/gallery-10.jpg";
-import gallery11 from "@/assets/gallery-11.jpg";
 
 const Gallery = () => {
   const [selectedFilter, setSelectedFilter] = useState("all");
@@ -53,34 +48,40 @@ const Gallery = () => {
       caption: "Belső terek átalakítása új válaszfalakkal.",
     },
     {
-      src: gallery7,
-      alt: "Modern fürdőszoba felújítás fa burkolattal",
+      src: gallery1,
+      alt: "Nappali felújítás modern berendezéssel",
       category: "renovation",
-      caption: "Exkluzív fürdőszoba kialakítás fa burkolattal és fekete zuhanyzóval.",
+      caption: "Nappali teljes körű felújítása és berendezése.",
     },
     {
-      src: gallery8,
-      alt: "Komplett lakásfelújítás tiszta munkával",
-      category: "renovation",
-      caption: "Teljes körű lakásfelújítás parkettával és fehér falakkal.",
+      src: gallery2,
+      alt: "Külső hőszigetelés munkálatok",
+      category: "insulation",
+      caption: "Homlokzatszigetelés kivitelezés folyamatban.",
     },
     {
-      src: gallery9,
-      alt: "Dolgozószoba kialakítás egyedi bútorokkal",
-      category: "renovation",
-      caption: "Modern dolgozószoba kialakítás beépített bútorokkal.",
+      src: gallery3,
+      alt: "Kőműves falazási munkák",
+      category: "masonry",
+      caption: "Alapozási és falazási munkák szakszerűen.",
     },
     {
-      src: gallery10,
-      alt: "LED mennyezeti világítás telepítése",
+      src: gallery4,
+      alt: "Fürdőszoba csempézés",
       category: "renovation",
-      caption: "Elegáns mennyezeti világítás modern LED-del.",
+      caption: "Professzionális csempézési munkák fürdőszobában.",
     },
     {
-      src: gallery11,
-      alt: "Hálószoba komplett átalakítás világítással",
+      src: gallery5,
+      alt: "Konyha komplett átalakítás",
       category: "renovation",
-      caption: "Teljes hálószoba felújítás LED mennyezeti világítással.",
+      caption: "Konyha teljes átalakítása új elrendezéssel.",
+    },
+    {
+      src: gallery6,
+      alt: "Belső építési munkák",
+      category: "masonry",
+      caption: "Belső terek átalakítása és modernizálása.",
     },
   ];
 

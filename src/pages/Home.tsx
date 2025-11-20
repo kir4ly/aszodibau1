@@ -55,13 +55,11 @@ const Home = () => {
           <div className="absolute inset-0 hero-gradient"></div>
         </div>
         <div className="relative z-10 container mx-auto px-4 text-center text-white animate-fade-in">
-          <div className="inline-block bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl mb-8">
-            <img 
-              src={logo} 
-              alt="Aszódi Bau - Haza hoztuk a minőséget" 
-              className="w-full max-w-sm mx-auto"
-            />
-          </div>
+          <img 
+            src={logo} 
+            alt="Aszódi Bau - Haza hoztuk a minőséget" 
+            className="w-full max-w-md mx-auto mb-8 drop-shadow-2xl"
+          />
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-medium">
             Teljes körű építőipari kivitelezés a tervezéstől a befejezésig –
             lakásfelújítás, homlokzatszigetelés és kőműves munkák egy kézben.
