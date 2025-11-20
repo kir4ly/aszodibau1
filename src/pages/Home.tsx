@@ -54,8 +54,11 @@ const Home = () => {
           <div className="inline-block bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl mb-8">
             <img src={logo} alt="Aszódi Bau - Haza hoztuk a minőséget" className="w-full max-w-sm mx-auto" />
           </div>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto font-medium">
-            Teljes körű építőipari kivitelezés a tervezéstől a befejezésig – lakás
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">
+            Építsük együtt álmaid otthonát
+          </h1>
+          <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+            Üdvözöljük az Aszódi Bau honlapján! Cégünk az építőiparban tevékenykedik, fő fókuszunk pedig a lakások felújítása. Célunk, hogy minőségi munkánkkal otthonossá és komfortossá tegyük ügyfeleink otthonát.
           </p>
           <Button asChild size="lg" className="bg-accent text-white hover:bg-accent/90 text-lg px-8 py-6 font-semibold">
             <Link to="/kapcsolat">Kapcsolatfelvétel</Link>
