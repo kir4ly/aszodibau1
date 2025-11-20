@@ -5,7 +5,7 @@ import { Home as HomeIcon, Building2, Hammer, ArrowRight } from "lucide-react";
 import ServiceCard from "@/components/ServiceCard";
 import heroImage from "@/assets/hero-building.png";
 import logo from "@/assets/logo.png";
-import gallery1 from "@/assets/gallery-1.jpg";
+import gallery1 from "@/assets/gallery-1-new.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
