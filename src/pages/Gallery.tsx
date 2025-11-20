@@ -1,11 +1,5 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import gallery1 from "@/assets/gallery-1.jpg";
-import gallery2 from "@/assets/gallery-2.jpg";
-import gallery3 from "@/assets/gallery-3.jpg";
-import gallery4 from "@/assets/gallery-4.jpg";
-import gallery5 from "@/assets/gallery-5.jpg";
-import gallery6 from "@/assets/gallery-6.jpg";
 import gallery7 from "@/assets/gallery-7.jpg";
 import gallery8 from "@/assets/gallery-8.jpg";
 import gallery9 from "@/assets/gallery-9.jpg";
@@ -16,78 +10,6 @@ const Gallery = () => {
   const [selectedFilter, setSelectedFilter] = useState("all");
 
   const galleryItems = [
-    {
-      src: gallery1,
-      alt: "Teljes körű lakásfelújítás Kecskeméten - nappali és konyha átalakítása",
-      category: "renovation",
-      caption: "Teljes körű lakásfelújítás Kecskeméten – nappali és konyha átalakítása.",
-    },
-    {
-      src: gallery2,
-      alt: "Homlokzatszigetelés referencia munka",
-      category: "insulation",
-      caption: "Energiahatékony homlokzatszigetelés modern technikával.",
-    },
-    {
-      src: gallery3,
-      alt: "Professzionális kőműves munkák",
-      category: "masonry",
-      caption: "Precíz kőműves munka lakásépítésnél.",
-    },
-    {
-      src: gallery4,
-      alt: "Modern fürdőszoba felújítás",
-      category: "renovation",
-      caption: "Teljes fürdőszoba felújítás kortárs stílusban.",
-    },
-    {
-      src: gallery5,
-      alt: "Kortárs konyha átalakítás",
-      category: "renovation",
-      caption: "Modern konyha kialakítás egyedi bútorokkal.",
-    },
-    {
-      src: gallery6,
-      alt: "Belső válaszfal építés",
-      category: "masonry",
-      caption: "Belső terek átalakítása új válaszfalakkal.",
-    },
-    {
-      src: gallery1,
-      alt: "Nappali felújítás modern berendezéssel",
-      category: "renovation",
-      caption: "Nappali teljes körű felújítása és berendezése.",
-    },
-    {
-      src: gallery2,
-      alt: "Külső hőszigetelés munkálatok",
-      category: "insulation",
-      caption: "Homlokzatszigetelés kivitelezés folyamatban.",
-    },
-    {
-      src: gallery3,
-      alt: "Kőműves falazási munkák",
-      category: "masonry",
-      caption: "Alapozási és falazási munkák szakszerűen.",
-    },
-    {
-      src: gallery4,
-      alt: "Fürdőszoba csempézés",
-      category: "renovation",
-      caption: "Professzionális csempézési munkák fürdőszobában.",
-    },
-    {
-      src: gallery5,
-      alt: "Konyha komplett átalakítás",
-      category: "renovation",
-      caption: "Konyha teljes átalakítása új elrendezéssel.",
-    },
-    {
-      src: gallery6,
-      alt: "Belső építési munkák",
-      category: "masonry",
-      caption: "Belső terek átalakítása és modernizálása.",
-    },
     {
       src: gallery7,
       alt: "Teljes lakásfelújítás tiszta kivitelezéssel",
