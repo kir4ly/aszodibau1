@@ -142,9 +142,9 @@ const Contact = () => {
               animationDelay: "0.1s"
             }}>
                 <CardContent className="p-0">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.773!2d19.6891!3d46.9067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743da59a0bb7bdf%3A0x8f5e0b0e2f2c3f1e!2sAsz%C3%B3di%20Bau!5e0!3m2!1sen!2shu!4v1647000000000!5m2!1sen!2shu" width="100%" height="300" style={{
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.7727891234567!2d19.68655!3d46.90671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743da59916d1111%3A0x222c3290c1e1260!2sAsz%C3%B3di%20Bau!5e0!3m2!1shu!2shu!4v1647123456789!5m2!1shu!2shu" width="100%" height="300" style={{
                   border: 0
-                }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="rounded-lg" title="Aszódi Bau helyszíne térképen"></iframe>
+                }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="rounded-lg" title="Aszódi Bau helyszíne - Kecskemét, Kossuth Lajos u. 60"></iframe>
                 </CardContent>
               </Card>
             </div>
