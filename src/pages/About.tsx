@@ -1,6 +1,6 @@
 import { CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import gallery1 from "@/assets/gallery-1.jpg";
+import gallery1 from "@/assets/about-room.jpg";
 
 const About = () => {
   const highlights = [
