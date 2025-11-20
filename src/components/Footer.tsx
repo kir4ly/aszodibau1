@@ -1,9 +1,7 @@
 import { Mail, Phone, MapPin, Facebook } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Footer = () => {
-  return (
-    <footer className="bg-secondary border-t border-border">
+  return <footer className="bg-secondary border-t border-border">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
@@ -18,17 +16,11 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Elérhetőség</h3>
             <div className="space-y-3">
-              <a
-                href="mailto:aszodibau@gmail.com"
-                className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors"
-              >
+              <a href="mailto:aszodibau@gmail.com" className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors">
                 <Mail className="h-5 w-5" />
                 <span>aszodibau@gmail.com</span>
               </a>
-              <a
-                href="tel:+36304372393"
-                className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors"
-              >
+              <a href="tel:+36304372393" className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors">
                 <Phone className="h-5 w-5" />
                 <span>+36 30 437 23 93</span>
               </a>
@@ -43,36 +35,19 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Gyors linkek</h3>
             <div className="space-y-2">
-              <Link
-                to="/"
-                className="block text-muted-foreground hover:text-primary transition-colors"
-              >
+              <Link to="/" className="block text-muted-foreground hover:text-primary transition-colors">
                 Főoldal
               </Link>
-              <Link
-                to="/rolunk"
-                className="block text-muted-foreground hover:text-primary transition-colors"
-              >
+              <Link to="/rolunk" className="block text-muted-foreground hover:text-primary transition-colors">
                 Rólunk
               </Link>
-              <Link
-                to="/kapcsolat"
-                className="block text-muted-foreground hover:text-primary transition-colors"
-              >
+              <Link to="/kapcsolat" className="block text-muted-foreground hover:text-primary transition-colors">
                 Kapcsolat
               </Link>
-              <Link
-                to="/kepgaleria"
-                className="block text-muted-foreground hover:text-primary transition-colors"
-              >
+              <Link to="/kepgaleria" className="block text-muted-foreground hover:text-primary transition-colors">
                 Képgaléria
               </Link>
-              <a
-                href="https://www.facebook.com/AszodiBau"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors"
-              >
+              <a href="https://www.facebook.com/AszodiBau" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-muted-foreground hover:text-primary transition-colors">
                 <Facebook className="h-5 w-5" />
                 <span>Facebook</span>
               </a>
@@ -81,11 +56,9 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 Aszódi Bau. Minden jog fenntartva.</p>
+          <p>© 2025 Aszódi Bau. Minden jog fenntartva.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
