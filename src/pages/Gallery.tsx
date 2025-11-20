@@ -53,42 +53,6 @@ const Gallery = () => {
       caption: "Belső terek átalakítása új válaszfalakkal.",
     },
     {
-      src: gallery1,
-      alt: "Nappali felújítás modern berendezéssel",
-      category: "renovation",
-      caption: "Nappali teljes körű felújítása és berendezése.",
-    },
-    {
-      src: gallery2,
-      alt: "Külső hőszigetelés munkálatok",
-      category: "insulation",
-      caption: "Homlokzatszigetelés kivitelezés folyamatban.",
-    },
-    {
-      src: gallery3,
-      alt: "Kőműves falazási munkák",
-      category: "masonry",
-      caption: "Alapozási és falazási munkák szakszerűen.",
-    },
-    {
-      src: gallery4,
-      alt: "Fürdőszoba csempézés",
-      category: "renovation",
-      caption: "Professzionális csempézési munkák fürdőszobában.",
-    },
-    {
-      src: gallery5,
-      alt: "Konyha komplett átalakítás",
-      category: "renovation",
-      caption: "Konyha teljes átalakítása új elrendezéssel.",
-    },
-    {
-      src: gallery6,
-      alt: "Belső építési munkák",
-      category: "masonry",
-      caption: "Belső terek átalakítása és modernizálása.",
-    },
-    {
       src: gallery7,
       alt: "Modern fürdőszoba felújítás fa burkolattal",
       category: "renovation",
