@@ -41,8 +41,8 @@ const Contact = () => {
     try {
       // EmailJS send - helyettesítsd be a saját Service ID-dat és Template ID-dat
       const result = await emailjs.send(
-        'YOUR_SERVICE_ID',      // Service ID az EmailJS dashboardról
-        'YOUR_TEMPLATE_ID',     // Template ID az EmailJS dashboardról
+        'service_t2v6tmm',
+        'template_0muyr7p',
         {
           from_name: formData.name,
           from_email: formData.email,
