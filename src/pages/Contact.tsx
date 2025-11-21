@@ -7,8 +7,8 @@ import { Mail, Phone, MapPin, Facebook } from "lucide-react";
 import { toast } from "sonner";
 import emailjs from '@emailjs/browser';
 
-// EmailJS inicializálás - helyettesítsd be a saját Public Key-edet az EmailJS dashboardról
-emailjs.init("YOUR_PUBLIC_KEY");
+// EmailJS inicializálás
+emailjs.init("ROV9-lFEgKPaiVNre");
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
