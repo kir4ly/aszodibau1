@@ -5,6 +5,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Facebook } from "lucide-react";
 import { toast } from "sonner";
+import emailjs from '@emailjs/browser';
+
+// EmailJS inicializálás - helyettesítsd be a saját Public Key-edet az EmailJS dashboardról
+emailjs.init("YOUR_PUBLIC_KEY");
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -12,16 +16,57 @@ const Contact = () => {
     phone: "",
     message: ""
   });
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isLoading, setIsLoading] = useState(false);
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real application, this would send the form data to a server
-    toast.success("Üzenet elküldve! Hamarosan felvesszük veled a kapcsolatot.");
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: ""
-    });
+    
+    // Validációk
+    if (formData.name.trim().length < 2) {
+      toast.error("A név legalább 2 karakter hosszú legyen");
+      return;
+    }
+    
+    if (!formData.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+      toast.error("Kérem adjon meg egy érvényes email címet");
+      return;
+    }
+    
+    if (formData.message.trim().length < 10) {
+      toast.error("Az üzenet legalább 10 karakter hosszú legyen");
+      return;
+    }
+
+    setIsLoading(true);
+
+    try {
+      // EmailJS send - helyettesítsd be a saját Service ID-dat és Template ID-dat
+      const result = await emailjs.send(
+        'YOUR_SERVICE_ID',      // Service ID az EmailJS dashboardról
+        'YOUR_TEMPLATE_ID',     // Template ID az EmailJS dashboardról
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          phone: formData.phone || 'Nincs megadva',
+          message: formData.message,
+        }
+      );
+
+      console.log('Email successfully sent:', result);
+      toast.success("Üzenet elküldve! Hamarosan felvesszük veled a kapcsolatot.");
+      
+      // Form reset
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: ""
+      });
+    } catch (error: any) {
+      console.error('Email sending failed:', error);
+      toast.error("Hiba történt az üzenet küldése során. Kérjük, próbálja újra később vagy hívjon minket.");
+    } finally {
+      setIsLoading(false);
+    }
   };
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -86,8 +131,13 @@ const Contact = () => {
                     </label>
                     <Textarea id="message" name="message" required value={formData.message} onChange={handleChange} placeholder="Írja le, miben segíthetünk..." rows={6} />
                   </div>
-                  <Button type="submit" className="w-full bg-primary hover:bg-accent" size="lg">
-                    Üzenet elküldése
+                  <Button 
+                    type="submit" 
+                    className="w-full bg-primary hover:bg-accent" 
+                    size="lg"
+                    disabled={isLoading}
+                  >
+                    {isLoading ? "Küldés..." : "Üzenet elküldése"}
                   </Button>
                 </form>
               </CardContent>
