@@ -39,7 +39,6 @@ const Contact = () => {
     setIsLoading(true);
 
     try {
-      // EmailJS send - helyettesítsd be a saját Service ID-dat és Template ID-dat
       const result = await emailjs.send(
         'service_t2v6tmm',
         'template_0muyr7p',
@@ -48,7 +47,8 @@ const Contact = () => {
           from_email: formData.email,
           phone: formData.phone || 'Nincs megadva',
           message: formData.message,
-        }
+        },
+        'ROV9-lFEgKPaiVNre' // Public Key as 4th parameter
       );
 
       console.log('Email successfully sent:', result);
