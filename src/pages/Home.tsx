@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Home as HomeIcon, Building2, Hammer, ArrowRight, Grid3x3, Paintbrush } from "lucide-react";
 import ServiceCard from "@/components/ServiceCard";
-import heroImage from "@/assets/hero-building.png";
+import heroImage from "@/assets/hero-construction.jpg";
 import logo from "@/assets/logo.png";
 import gallery1 from "@/assets/gallery-1-new.jpg";
 import gallery7 from "@/assets/gallery-7.jpg";
