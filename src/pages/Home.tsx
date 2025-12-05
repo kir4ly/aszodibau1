@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Home as HomeIcon, Building2, Hammer, ArrowRight } from "lucide-react";
+import { Home as HomeIcon, Building2, Hammer, ArrowRight, Grid3x3, Paintbrush } from "lucide-react";
 import ServiceCard from "@/components/ServiceCard";
 import heroImage from "@/assets/hero-building.png";
 import logo from "@/assets/logo.png";
@@ -15,15 +15,23 @@ const Home = () => {
   const services = [{
     icon: HomeIcon,
     title: "Lakásfelújítás",
-    description: "Teljes körű lakásfelújítást vállalunk a bontástól a kulcsrakész átadásig. Konyha, fürdőszoba, nappali vagy teljes lakás modernizálása – megtervezzük, elvégezzük, átadjuk."
-  }, {
-    icon: Building2,
-    title: "Homlokzatszigetelés",
-    description: "Energiahatékony, korszerű homlokzatszigetelő rendszerek kivitelezése. Segítünk csökkenteni a fűtési költségeket és tartósan megóvni az épületet az időjárástól."
+    description: "Lakásfelújítás - új élet az otthonban. Egy jól sikerült felújítás nemcsak a lakás megjelenését változtatja meg, hanem az egész életteret felfrissíti. Legyen szó konyháról, fürdőszobáról, burkolásról vagy teljes átalakításról - mi minden részletre odafigyelünk, hogy az elképzelésed valósággá váljon. Minőségi anyagokkal, precíz munkával és megbízható szakemberekkel dolgozunk, mert tudjuk: a lakásfelújítás nem csak munka - ez a Te otthonod. **Ha felújításról van szó, mi minőséget és a megbízhatóságot tartjuk legfontosabbnak!**"
   }, {
     icon: Hammer,
     title: "Kőműves munkák",
-    description: "Alapozás, falazás, válaszfalak, átalakítások – precíz, szakszerű kőműves munkák lakásoknál és kisebb épületeknél. Stabil szerkezet, tiszta, rendezett munkaterület."
+    description: "Kőműves munkák - erős alap a biztos jövőhöz. A jó kőműves munka minden építkezés lelke. Legyen szó alapozásról, falazásról, térkövezésről, válaszfalak vagy akár teljes házbővítésről - mi precizen, szakértelemmel és odafigyeléssel dolgozunk. Több éves tapasztalattal, minőségi anyagokkal és pontos kivitelezéssel biztosítjuk, hogy minden építmény tartós, biztonságos és esztétikus legyen. **Ha kőműves munkáról van szó, mi nem csak építünk - mi értéket teremtünk!**"
+  }, {
+    icon: Building2,
+    title: "Homlokzatszigetelés",
+    description: "Homlokzatszigetelés - mert az energia a falaknál kezdődik. A jó szigetelés nem luxus, hanem befektetés! Megtartja a meleget télen, a hűvöset nyáron, és jelentősen csökkenti a rezsiköltségeket. Emellett megóvja az épületet a nedvességtől és a penésztől, így otthona nemcsak szebb, hanem tartósabb is lesz. Mi a homlokzatszigetelést **precízen tapasztalattal és minőségi anyagokkal** végezzük - hogy az eredmény ne csak jól nézzen ki, hanem hosszú távon is megtérüljön. **Ha szigetelésről van szó, mi tudjuk, hogyan lesz tökéletes!**"
+  }, {
+    icon: Grid3x3,
+    title: "Burkolás",
+    description: "Burkolás - precizitás és tartósság a tökéletes otthonért. A burkolás az egyik legmeghatározóbb eleme egy lakásfelújításnak: nemcsak funkcionális, hanem esztétikai szerepe is kiemelkedő. Legyen szó csempéről, járólapról vagy egyedi mintázatú burkolatról, munkánkat mindig maximális precizitással és odafigyeléssel végezzük. Fontos számunkra a pontos előkészítés, a minőségi anyagok használata és a hibátlan kivitelezés, hogy az elkészült felület hosszú éveken át szép és tartós maradjon. **Célunk, hogy ügyfeleink elképzelései professzionális módon valósuljanak meg, és otthonuk valóban azt az érzést nyújtsa, amit megálmodtak.**"
+  }, {
+    icon: Paintbrush,
+    title: "Festés",
+    description: "Friss színek, megújult hangulat. A gondosan elvégzett festés az otthonfelújítás egyik leglátványosabb része: egy jól megválasztott szín, egy precíz ecsetvonás az egész lakás hangulatát képes megváltoztatni. Munkánkat mindig alapos előkészítéssel kezdjük – a falak javításától a megfelelő alapozásig –, hogy a végeredmény tökéletesen egyenletes és tartós legyen. Minőségi festékekkel dolgozunk, odafigyelve a részletekre és az ügyfelek elképzeléseire. **Célunk, hogy a frissen festett terek nemcsak szépek, hanem hosszú éveken át kifogástalanok maradjanak.**"
   }];
   const galleryImages = [{
     src: gallery7,
@@ -70,11 +78,11 @@ const Home = () => {
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Szolgáltatásaink</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Lakásfelújítástól a homlokzatszigetelésen át a kőműves munkákig mindent vállalunk,
+              Lakásfelújítástól a burkoláson, festésen és homlokzatszigetelésen át a kőműves munkákig mindent vállalunk,
               amire egy otthon felújításánál szükség lehet.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
             {services.map((service, index) => <div key={index} className="animate-scale-in" style={{
             animationDelay: `${index * 0.1}s`
           }}>
@@ -91,7 +99,7 @@ const Home = () => {
             <div className="animate-fade-in">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Rólunk – Aszódi Bau</h2>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Foglalkozunk építőipari munkákkal – a lakásfelújítástól a homlokzatszigetelésen át
+                Foglalkozunk építőipari munkákkal – a lakásfelújítástól a burkoláson, festésen és homlokzatszigetelésen át
                 a kőműves munkákig. Célunk, hogy megbízható, minőségi kivitelezéssel segítsünk olyan
                 otthont kialakítani, ahol valóban jó élni.
               </p>
@@ -118,8 +126,7 @@ const Home = () => {
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Munkáinkból</h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Néhány példa az általunk végzett lakásfelújításokra, homlokzatszigetelési és kőműves
-              munkákra. A galériában még több elkészült projektet találsz.
+              Tekintsd meg legutóbbi munkáinkat – egyszerűen őszintén.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">

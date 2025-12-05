@@ -1,6 +1,7 @@
 import { CheckCircle } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import gallery1 from "@/assets/about-room.jpg";
+import roomImage from "@/assets/gallery-1-new.jpg";
 
 const About = () => {
   const highlights = [
@@ -18,7 +19,7 @@ const About = () => {
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Rólunk – Aszódi Bau</h1>
             <p className="text-xl md:text-2xl opacity-90">
-              Foglalkozunk építőipari munkákkal – lakásfelújítással, homlokzatszigeteléssel és
+              Foglalkozunk építőipari munkákkal – lakásfelújítással, burkolással, festéssel, homlokzatszigeteléssel és
               kőműves kivitelezéssel. Cégünk célja, hogy ügyfeleink elképzeléseit valósággá alakítsuk
               megbízható, minőségi munkával.
             </p>
@@ -30,28 +31,33 @@ const About = () => {
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
-            <div className="animate-fade-in">
-              <img
-                src={gallery1}
-                alt="Aszódi Bau építőipari munka"
-                className="rounded-lg shadow-xl w-full h-auto"
-              />
+            <div className="animate-fade-in relative">
+              {/* Overlapping images layout */}
+              <div className="relative">
+                <img
+                  src={gallery1}
+                  alt="Aszódi Bau építőipari munka"
+                  className="rounded-lg shadow-xl w-3/4 h-auto relative z-10"
+                />
+                <img
+                  src={roomImage}
+                  alt="Felújított szoba - Aszódi Bau"
+                  className="rounded-lg shadow-2xl w-2/3 h-auto absolute -bottom-8 -right-8 z-20"
+                />
+              </div>
             </div>
             <div className="animate-scale-in space-y-6">
               <h2 className="text-3xl font-bold text-primary">
                 Teljes körű felújítás – a konyhától a fürdőig
               </h2>
               <p className="text-lg leading-relaxed">
-                Cégünk teljes körű lakásfelújítással és építőipari munkákkal foglalkozik, a
-                tervezéstől a kivitelezésig.
+                Cégünk több éves tapasztalattal vállal teljeskörű felújításokat és kivitelezéseket, legyen szó lakóházakról, irodákról vagy egyéb épületekről. Szakértő csapatunk minden igényt figyelembe véve, precízen és megbízhatóan végzi el a munkákat, a legmagasabb minőségi standardok szerint.
               </p>
               <p className="text-lg leading-relaxed">
-                Célunk, hogy ügyfeleink álmait valóra váltsuk minőségi munkával, megbízhatósággal és
-                precizitással.
+                Külföldön szereztük meg szakmai tapasztalatunkat, és onnan hoztuk haza a minőséget, hogy ügyfeleinknek itthon is a legjobbat nyújthassuk. Segítséget nyújtunk pályázatokkal kapcsolatos ügyintézésben, valamint ingatlanos partnereken keresztül támogatjuk ügyfeleinket a megfelelő ingatlan megtalálásában vagy értékesítésében.
               </p>
               <p className="text-lg leading-relaxed">
-                Legyen szó kisebb javításról, teljes felújításról vagy modern átalakításról, minden
-                projektet maximális odafigyeléssel végzünk.
+                Célunk, hogy minden ügyfelünk számára teljes körű, megbízható és magas színvonalú szolgáltatást nyújtsunk. Fontos számunkra a bizalom és a korrektség – amit megbeszélünk, az úgy is van. Megbízhatóság, precizitás és minőség – ez a mi alapunk minden projektben.
               </p>
             </div>
           </div>

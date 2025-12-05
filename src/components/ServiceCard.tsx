@@ -8,6 +8,17 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps) => {
+  // Convert markdown-style bold (**text**) to HTML <strong> tags
+  const formatDescription = (text: string) => {
+    const parts = text.split(/(\*\*[^*]+\*\*)/g);
+    return parts.map((part, index) => {
+      if (part.startsWith('**') && part.endsWith('**')) {
+        return <strong key={index}>{part.slice(2, -2)}</strong>;
+      }
+      return part;
+    });
+  };
+
   return (
     <Card className="h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1 flex flex-col">
       <CardHeader className="flex-shrink-0">
@@ -17,7 +28,9 @@ const ServiceCard = ({ icon: Icon, title, description }: ServiceCardProps) => {
         <CardTitle className="text-xl">{title}</CardTitle>
       </CardHeader>
       <CardContent className="flex-grow">
-        <CardDescription className="text-base leading-relaxed">{description}</CardDescription>
+        <CardDescription className="text-base leading-relaxed">
+          {formatDescription(description)}
+        </CardDescription>
       </CardContent>
     </Card>
   );
